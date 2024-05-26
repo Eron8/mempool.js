@@ -77,7 +77,7 @@ const {
   liquid: { addresses },
 } = mempoolJS();
 
-const address = 'Go65t19hP2FuhBMYtgbdMDgdmEzNwh1i48';
+const address = '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const myAddress = await addresses.getAddress({ address });
 console.log(myAddress);
@@ -98,7 +98,7 @@ const {
   liquid: { addresses },
 } = mempoolJS();
 
-const address = 'Go65t19hP2FuhBMYtgbdMDgdmEzNwh1i48';
+const address = '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const addressTxs = await addresses.getAddressTxs({ address });
 console.log(addressTxs);
@@ -119,7 +119,7 @@ const {
   liquid: { addresses },
 } = mempoolJS();
 
-const address = 'Go65t19hP2FuhBMYtgbdMDgdmEzNwh1i48';
+const address = '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const addressTxsChain = await addresses.getAddressTxsChain({ address });
 console.log(addressTxsChain);
@@ -140,7 +140,7 @@ const {
   liquid: { addresses },
 } = mempoolJS();
 
-const address = 'Go65t19hP2FuhBMYtgbdMDgdmEzNwh1i48';
+const address = '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const addressTxsMempool = await addresses.getAddressTxsMempool({ address });
 console.log(addressTxsMempool);
@@ -179,7 +179,7 @@ const {
 } = mempoolJS();
 
 const asset_id =
-  '6f0279e9ed041c3d710a9f57d0c02928416460c4b722ae3457a11eec381c526d';
+  '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const asset = await assets.getAsset({ asset_id });
 console.log(asset);
@@ -202,7 +202,7 @@ const {
 } = mempoolJS();
 
 const asset_id =
-  '6f0279e9ed041c3d710a9f57d0c02928416460c4b722ae3457a11eec381c526d';
+  '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const assetTxs = await assets.getAssetTxs({ asset_id, is_mempool: false });
 console.log(assetTxs);
@@ -225,7 +225,7 @@ const {
 } = mempoolJS();
 
 const asset_id =
-  '6f0279e9ed041c3d710a9f57d0c02928416460c4b722ae3457a11eec381c526d';
+  '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const assetSupply = await assets.getAssetSupply({ asset_id, decimal: false });
 console.log(assetSupply);
@@ -739,7 +739,7 @@ Subscribe to multiple addresses updates.
 [ [NodeJS Example](examples/nodejs/liquid/websocket.ts) ] [ [HTML Example](examples/html/liquid/websocket.html) ] [ [Top](#features) ]
 
 ```js
-websocket.wsTrackAddresses(ws, ['GiAi95k5JUPNPoDGNzSUZ8vWMijSiSMTon']); // for in-browser websocket, use websocket.wsTrackAddressesBrowser
+websocket.wsTrackAddresses(ws, ['39VjBgPH8A1xrwpmnmLpRj8wibw4CGzzhL']); // for in-browser websocket, use websocket.wsTrackAddressesBrowser
 ```
 
 ### **Stop Track Addresses**
