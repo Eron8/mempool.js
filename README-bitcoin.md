@@ -100,7 +100,7 @@ const {
   bitcoin: { addresses },
 } = mempoolJS();
 
-const address = '1wizSAYSbuyXbt9d8JV8ytm5acqq2TorC';
+const address = '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const myAddress = await addresses.getAddress({ address });
 console.log(myAddress);
@@ -121,7 +121,7 @@ const {
   bitcoin: { addresses },
 } = mempoolJS();
 
-const address = '1wizSAYSbuyXbt9d8JV8ytm5acqq2TorC';
+const address = '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const addressTxs = await addresses.getAddressTxs({ address });
 console.log(addressTxs);
@@ -142,7 +142,7 @@ const {
   bitcoin: { addresses },
 } = mempoolJS();
 
-const address = '1wizSAYSbuyXbt9d8JV8ytm5acqq2TorC';
+const address = '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const addressTxsChain = await addresses.getAddressTxsChain({ address });
 console.log(addressTxsChain);
@@ -163,7 +163,7 @@ const {
   bitcoin: { addresses },
 } = mempoolJS();
 
-const address = '1wizSAYSbuyXbt9d8JV8ytm5acqq2TorC';
+const address = '39VjBgPH8A1xrwpmnmLpRj8WibW4CGzzhL';
 
 const addressTxsMempool = await addresses.getAddressTxsMempool({ address });
 console.log(addressTxsMempool);
@@ -480,7 +480,7 @@ const {
   bitcoin: { lightning },
 } = mempoolJS();
 
-const nodesInCountry = await lightning.getNodesInCountry({ country: 'US' });
+const nodesInCountry = await lightning.getNodesInCountry({ country: 'INA' });
 console.log(nodesInCountry);
 ```
 
@@ -1006,7 +1006,7 @@ Subscribe to address updates.
 [ [NodeJS Example](examples/nodejs/bitcoin/websocket.ts) ] [ [HTML Example](examples/html/bitcoin/websocket.html) ] [ [Top](#features) ]
 
 ```js
-websocket.wsTrackAddress(ws, '1wizSAYSbuyXbt9d8JV8ytm5acqq2TorC'); // for in-browser websocket, use websocket.wsTrackAddressBrowser
+websocket.wsTrackAddress(ws, '39VjBgPH8A1xrwpmnmLpRj8wibw4CGzzhL'); // for in-browser websocket, use websocket.wsTrackAddressBrowser
 ```
 
 ### **Stop Track Address**
@@ -1016,7 +1016,7 @@ Unsubscribe from address updates.
 [ [NodeJS Example](examples/nodejs/bitcoin/websocket.ts) ] [ [HTML Example](examples/html/bitcoin/websocket.html) ] [ [Top](#features) ]
 
 ```js
-websocket.wsStopTrackingAddress(ws, '1wizSAYSbuyXbt9d8JV8ytm5acqq2TorC'); // for in-browser websocket, use websocket.wsStopTrackingAddressBrowser
+websocket.wsStopTrackingAddress(ws, '39VjBgPH8A1xrwpmnmLpRj8wibw4CGzzhL'); // for in-browser websocket, use websocket.wsStopTrackingAddressBrowser
 ```
 
 ### **Track Addresses**
@@ -1026,7 +1026,7 @@ Subscribe to multiple address updates.
 [ [NodeJS Example](examples/nodejs/bitcoin/websocket.ts) ] [ [HTML Example](examples/html/bitcoin/websocket.html) ] [ [Top](#features) ]
 
 ```js
-websocket.wsTrackAddresses(ws, ['1wizSAYSbuyXbt9d8JV8ytm5acqq2TorC']); // for in-browser websocket, use websocket.wsTrackAddressesBrowser
+websocket.wsTrackAddresses(ws, ['39VjBgPH8A1xrwpmnmLpRj8wibw4CGzzhL']); // for in-browser websocket, use websocket.wsTrackAddressesBrowser
 ```
 
 ### **Stop Track Addresses**
