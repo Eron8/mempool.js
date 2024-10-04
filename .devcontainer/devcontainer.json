@@ -1,0 +1,52 @@
+9a15ce94d883160fa522d5689114748a93add9c8 Pazartesi 17 Eylül 00:00:00 2001
+Gönderen: Eron8 <159418647+Eron8@users.noreply.github.com>
+Tarih: Pzt, 27 May 2024 15:51:14 +0700
+Konu: [PATCH] npm-gulp.yml'yi oluşturun
+
+---
+ .github/workflows/npm-gulp.yml | 28 ++++++++++++++++++++++++++++
+ 1 dosya değiştirildi, 28 ekleme(+)
+ 100644 modunu oluştur .github/workflows/npm-gulp.yml
+
+diff --git a/.github/iş akışları/npm-gulp.yml b/.github/iş akışları/npm-gulp.yml
+yeni dosya modu 100644
+dizin 0000000..64fff95
+--- /dev/null
++++ b/.github/iş akışları/npm-gulp.yml
+@@ -0,0 +1,28 @@
++name: Gulp ile NodeJS
++
++üzerinde:
++ itme:
++ dallar: [ "ana" ]
++ çekme_isteği:
++ dallar: [ "ana" ]
++
++işler:
++ yapı:
++ çalışır: ubuntu-latest
++
++ strateji:
++ matris:
++ düğüm sürümü: [14.x, 16.x, 18.x]
++
++ adımlar:
++ - kullanımlar: actions/checkout@v4
++
++ - name: Node.js ${{ matrix.node-version }} kullanın
++ kullanımlar: actions/setup-node@v3
++ ile:
++ düğüm sürümü: ${{ matrix.node sürümü }}
++
++ - adı: Yapı
++ çalıştır: |
++ npm kurulumu
++ yudum
++"ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {}
+Installs the Azure CLI and needed dependencies.
+
+For additional information, see this Feature's documentation.
+
+Installation
+Copy and paste the following snippet into the features attribute of your devcontainer.json file.
+"ghcr.io/bartventer/arch-devcontainer-features/azure-cli:1": {}
